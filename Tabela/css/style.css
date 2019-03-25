@@ -1,0 +1,60 @@
+th, td {
+    border-right: 1px solid #dfdfdf;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+
+tbody > tr:nth-child(even) {
+    background-color: #dfdfdf;
+}
+
+.titulo--verde {
+    background-color: #09aa03;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.titulo--azul {
+    background-color: #1403aa;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.comprar {
+    padding: 10px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5%;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.planos {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+    
+}
+
+tr td:first-child {
+    text-align: left;
+}
+
+.linha-botoes th {
+    padding: 20px 0;
+   
+}
+.check-azul {
+    color: #1403aa;
+}
+
+.check-verde {
+    color: #09aa03;
+}
+
