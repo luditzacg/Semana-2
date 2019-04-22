@@ -104,7 +104,7 @@ body {
     background-image: url(../img/bg-servicos.png);
     display: flex;
     width: 100%;
-    min-height: 35vh; 
+    height: 460px; 
     align-items: center;
     justify-content: space-evenly;
 }
@@ -119,11 +119,22 @@ body {
 }
 
 .fundo-azul {
+    position: relative;
+    justify-content: center;
+    align-items: center;
     padding: 20px 20px 35px 20px;
     background-color: #14c0d6;
     color: #ffffff;
     border-radius: 5px;
-    width: 200px;
+    width: 260px;
+
+}
+
+.position-btn {
+   
+    position: absolute;
+    bottom: -15px;
+    left: 90px;
 }
 
 .imagem-servicos {
@@ -140,203 +151,131 @@ body {
 
 
 
-.voce-sabia {
+.bg__curiosidades {
     background-image: url(../img/bg-numeros.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
-    min-height: 35vh; 
+    height: 50vh; 
     color: #ffffff;
     font-size: 12px;
 }
 
-.voce-sabia h1 {
+.curiosidades__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bloco__curiosidades {
+    width: 300px;
+}
+
+.bg__curiosidades h1 {
     color: #fcc100;
     text-align: center;
     font-size: 30px;
 }
-/* pedir ajuda*/
-
-.contato h2 {
-    margin-top: 15px;
-}
 
 .contato {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.contato__cliente {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.contato__dados {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.subject div~div {
-    margin-left: 5px;
-}
-
-.contato__dados input {
-    background-color: #f3f394;
-    border: #ffff66;
-    padding: 5px;
-}
-
-.contato div {
-    display: flex;
-    flex-direction: column;
-    min-width: 70vh;
-}
-
-.contato__messagem label {
-    width: 100%;
+    margin: 0 auto;
+    width: 40%;
     text-align: left;
 }
 
-.contato__messagem input {
-    display: block;
-    width: 101%;
-    background-color: #f3f394;
-    border: #ffff66;
-    padding: 5px 0;;
+.contato h2 {
+    margin-top: 5%;
+    text-align: center;
 }
 
-.contato__messagem textarea {
-    display: block;
+.contato input {
+    background-color: #ebdba8;
+    border: none;
     width: 100%;
-    background-color: #f3f394;
-    border: #ffff66;
-
+    padding: 10px;
+    margin-bottom: 3%;
 }
 
-.contato__enviar {
-    margin-top: 5px;
-    width: 102%;
-    background-color: #1a8cff;
-    color: white;
-    padding: 3% 0;
-    font-size: 100%;
+.contato textarea {
+    background-color: #ebdba8;
+    border: none;
+    width: 84.5%;
+    padding: 50px;
+}
+
+.btn__formulario {
+    background-color: #114a94;
+    border: none;
     text-transform: uppercase;
-    border-radius: 2px;
-    border: #1a8cff;
+    color: #ffffff;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    width: 104.2%;
+    padding: 10px;
+    
 }
 
-/* Seção newsletter */
 .newsletter {
-    background-color: #ffff66;
-    padding: 50px 0;
-    width: 100%;
-}
-.newsletter h4 {
-    font-size: 40px;
-    font-family: 'Flamenco', Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-.newsletter div {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color:#fcc100;
+    height: 200px;
 }
 
-.newsletter__email {
-    padding: 6px 247px 6px 0;
-    font-size: 100%;
+.newsletter h1 {
+    font-size: 30px;
 }
 
-.newsletter__call-to-action {
-    padding: 6px 40px 6px 40px;
-    font-size: 100%;
+.newsletter input {
+    width: 30%;
+    padding: 10px;
+    border: none;
+}
+
+.btn__news {
     background-color: tomato;
-    color: white;
+    padding: 10px;
     text-transform: uppercase;
-    border-radius: 5px;
-    border: tomato;
+    border: none;
+    color: #ffffff;
 }
 
-/* Seção footer */
-footer > div {
+.bg__footer {
     display: flex;
+    background-color: #383a3b;
+    color: #ffffff;
     justify-content: space-around;
-    text-align: center;
-    background-color: #595959;
-    color: white;
+    
 }
 
-footer > div {
-    padding-top: 10px;
+.menu__footer{
+    margin-top: 3%;
 }
 
-footer ul li {
-    font-family: 'Flamenco', Arial, Helvetica, sans-serif;
+.menu__footer ul {
     list-style: none;
-    font-size: 12px;
-    text-align: left;
-    padding: 2px;
 }
 
-footer ul a {
-    font-family: 'Flamenco', Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-}
-
-.footer__brand {
-    font-size: 13px;
-}
-
-.footer__brand span {
+.itl {
     font-style: italic;
-    font-weight: lighter;
 }
 
-.footer__brand > img {
-    width: 50%;
-    padding-bottom: 10px;
+.logo__footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3%;
 }
 
-.footer__brand > a {
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
-
-.footer__brand > p {
-    margin: 10px;
-    padding-bottom: 10px;
-}
-
-.footer__redes p {
-    font-size: 14px;
-    font-weight: bolder;
+.redes__footer{
+    margin-top: 3%;
     text-transform: uppercase;
-}
-
-.footer__redes img {
-    width: 15%;
-    padding: 5px;
+    text-align: center;
 }
